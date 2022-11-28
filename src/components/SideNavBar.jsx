@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react";
 
 const SideNavBar = () => {
@@ -6,7 +7,7 @@ const SideNavBar = () => {
       <nav className="navbar">
         <div className="container-fluid">
           <button
-            className="navbar-toggler"
+            className="sidenav-toggle rounded  m-2 border-0"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#navbarToggleExternalContent"
@@ -14,7 +15,7 @@ const SideNavBar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon "></span>
           </button>
         </div>
       </nav>
@@ -23,14 +24,55 @@ const SideNavBar = () => {
         id="navbarToggleExternalContent"
         data-bs-dismiss="offcanvas"
       >
+        <button
+          type="button "
+          className="btn-close "
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
         <div className="offcanvas-header m-2">
-          <h5 className="offcanvas-title">Backdrop with scrolling</h5>
-          <button
-            type="button"
-            className="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
+          <h5 className="offcanvas-title row menu">
+            <img
+              src="https://raw.githubusercontent.com/Paata1987/Store/main/src/components/87f5485fd81b4c7da0f1e71b2522eee6.png"
+              className="logo"
+              alt="Dinara Logo"
+            />
+            <Link
+              className="m-2 p-2"
+              to="/registration"
+            >
+              {" "}
+              Registration{" "}
+            </Link>
+            <Link
+              className="m-2 p-2"
+              to="/"
+            >
+              {" "}
+              Home{" "}
+            </Link>
+            <Link
+              className="m-2 p-2"
+              to="/about"
+            >
+              {" "}
+              About{" "}
+            </Link>
+            <Link
+              className="m-2 p-2"
+              to="/contacts"
+            >
+              {" "}
+              Contact{" "}
+            </Link>
+            <Link
+              className="m-2 p-2"
+              to="/logaut"
+            >
+              {" "}
+              Logout{" "}
+            </Link>
+          </h5>
         </div>
         <div className="offcanvas-body">
           <p>
@@ -38,7 +80,6 @@ const SideNavBar = () => {
           </p>
         </div>
       </div>
-      SideNavBar
     </div>
   );
 };
