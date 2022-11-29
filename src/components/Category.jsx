@@ -9,9 +9,11 @@ function Category() {
   const categoryArray = [...new Set(Array.from(new Set(preCategoryArrays)))];
 
   const listCategory = categoryArray.map((categoryItem, index) => (
-    <ui className="row">
-      <Link key={index}>{categoryItem}</Link>
-    </ui>
+    <ul className="row" key={index}>
+      <Link className="m-2 p-2" key={index}>
+        {categoryItem}
+      </Link>
+    </ul>
   ));
 
   console.log('catar: ', categoryArray);
@@ -23,11 +25,7 @@ function Category() {
       .catch((error) => console.log(error.message));
   }, []);
 
-  return (
-    <div className="row">
-      <h2 className="">{listCategory}</h2>
-    </div>
-  );
+  return <div className="row">{listCategory}</div>;
 }
 
 export default Category;

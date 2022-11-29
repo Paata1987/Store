@@ -29,7 +29,7 @@ img {
 nav a {
   font-weight: 700;
   font-style: normal;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 30px;
   margin: 15px;
   text-decoration: none;
@@ -78,4 +78,17 @@ nav a {
 }
 .btn-close:hover {
   transform: scale(1.2);
+}
+.searchButton {
+  width: 20px;
+  background-color: #008cba;
+  color: #ffffff;
+}
+.avatar {
+  height: 50px;
+  width: 50px;
+  padding: 0%;
+  margin: 5px;
+  background: #000;
+  border-radius: 100%;
 }

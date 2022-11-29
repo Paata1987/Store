@@ -58,13 +58,9 @@ const SideNavBar = () => {
               {' '}
               Logout{' '}
             </Link>
-          </h5>
-        </div>
-        <div className="offcanvas-body">
-          <Category />
-          <p>
+            <Category />
             Try scrolling the rest of the page to see this option in action.
-          </p>
+          </h5>
         </div>
       </div>
     </div>
