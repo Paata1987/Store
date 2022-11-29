@@ -1,7 +1,7 @@
-import { useEffect } from "react";
-import { useState } from "react";
-import API_URL from "../env/apier";
-import Category from "./Category";
+import { useEffect } from 'react';
+import { useState } from 'react';
+import API_URL from '../env/apier';
+import Category from './Category';
 
 function Products() {
   const [todo, setTodo] = useState([]);
@@ -11,23 +11,13 @@ function Products() {
   // const catArr = Array.from(new Set(cate));
 
   useEffect(() => {
-    fetch(API_URL[1])
+    fetch(API_URL)
       .then((res) => res.json())
       .then((json) => setTodo(json))
       .catch((error) => console.log(error.message));
   }, []);
 
-  return (
-    <div>
-      {todo &&
-        todo.map((cat, index) => (
-          <Category
-            key={index}
-            {...cat}
-          />
-        ))}
-    </div>
-  );
+  return <div></div>;
 }
 
 export default Products;

@@ -1,6 +1,3 @@
-const API_URL = [
-  "https://fakestoreapi.com/products/categories",
-  "https://fakestoreapi.com/products",
-];
+const API_URL = 'https://fakestoreapi.com/products';
 
 export default API_URL;
