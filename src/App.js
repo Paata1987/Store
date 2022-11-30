@@ -9,7 +9,7 @@ import Contacts from "./components/Contacts";
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="container ">
         <Header />
         <Routes>
           <Route

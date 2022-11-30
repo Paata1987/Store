@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
-import React from 'react';
-import Category from './Category';
+import { Link } from "react-router-dom";
+import React from "react";
+import Category from "./Category";
 
 const SideNavBar = () => {
   return (
@@ -38,25 +38,40 @@ const SideNavBar = () => {
               className="logo"
               alt="Dinara Logo"
             />
-            <Link className="m-2 p-2" to="/registration">
-              {' '}
-              Registration{' '}
+            <Link
+              className="m-2 p-2"
+              to="/registration"
+            >
+              {" "}
+              Registration{" "}
             </Link>
-            <Link className="m-2 p-2" to="/">
-              {' '}
-              Home{' '}
+            <Link
+              className="m-2 p-2"
+              to="/"
+            >
+              {" "}
+              Home{" "}
             </Link>
-            <Link className="m-2 p-2" to="/about">
-              {' '}
-              About{' '}
+            <Link
+              className="m-2 p-2"
+              to="/about"
+            >
+              {" "}
+              About{" "}
             </Link>
-            <Link className="m-2 p-2" to="/contacts">
-              {' '}
-              Contact{' '}
+            <Link
+              className="m-2 p-2"
+              to="/contacts"
+            >
+              {" "}
+              Contact{" "}
             </Link>
-            <Link className="m-2 p-2" to="/logaut">
-              {' '}
-              Logout{' '}
+            <Link
+              className="m-2 p-2"
+              to="/logaut"
+            >
+              {" "}
+              Logout{" "}
             </Link>
             <Category />
             Try scrolling the rest of the page to see this option in action.

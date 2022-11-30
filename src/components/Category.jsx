@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
-import { useState } from 'react';
-import API_URL from '../env/apier';
+import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { useState } from "react";
+import API_URL from "../env/apier";
 
 function Category() {
   const [todo, setTodo] = useState([]);
@@ -9,14 +9,20 @@ function Category() {
   const categoryArray = [...new Set(Array.from(new Set(preCategoryArrays)))];
 
   const listCategory = categoryArray.map((categoryItem, index) => (
-    <ul className="row" key={index}>
-      <Link className="m-2 p-2" key={index}>
+    <ul
+      className="row"
+      key={index}
+    >
+      <Link
+        className=""
+        key={index}
+      >
         {categoryItem}
       </Link>
     </ul>
   ));
 
-  console.log('catar: ', categoryArray);
+  //console.log('catar: ', categoryArray);
 
   useEffect(() => {
     fetch(API_URL)

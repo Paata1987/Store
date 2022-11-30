@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
-import { useState } from 'react';
-import API_URL from '../env/apier';
-
+import { useEffect } from "react";
+import { useState } from "react";
+import API_URL from "../env/apier";
+import Product from "./Product";
 function Products() {
   const [todo, setTodo] = useState([]);
 
@@ -12,7 +12,20 @@ function Products() {
       .catch((error) => console.log(error.message));
   }, []);
   console.log(todo);
-  return <div></div>;
+  return (
+    <div>
+      {todo && (
+        <div>
+          {todo.map((x, index) => (
+            <Product
+              key={index}
+              {...x}
+            />
+          ))}
+        </div>
+      )}{" "}
+    </div>
+  );
 }
 
 export default Products;
