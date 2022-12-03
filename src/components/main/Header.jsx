@@ -1,7 +1,6 @@
 import React from 'react';
 import NavbarMenu from './NavbarMenu';
 import SideNavBar from './SideNavBar';
-import { RiSearch2Line } from 'react-icons/ri';
 
 const Header = () => {
   return (

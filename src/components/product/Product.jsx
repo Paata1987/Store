@@ -6,7 +6,7 @@ const product = (props) => {
   return (
     <div className="col col-12 col-sm-6 col-md-3 col-lg-3">
       <div className="border border-0 position-relative ">
-        <img src={image} className="card-img-top " alt="Product Picture" />
+        <img src={image} className="card-img-top " alt="product" />
         <div className="card-body">
           <h6 className="card-text ">{title}</h6>
           <h4 className="card-title ">Price: {price} $</h4>
@@ -19,14 +19,7 @@ const product = (props) => {
           </button>
         </div>
       </div>
-      <div>
-        {' '}
-        {/* <div className="myCard ">
-          <img src={image} alt="" /> <p> {description} </p>
-          <h3> {price} </h3>
-          <h4> {rating.rate} </h4>
-        </div> */}
-      </div>
+      <div> </div>
     </div>
   );
 };
