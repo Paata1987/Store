@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import React from "react";
-import Category from "./Category";
+import { Link } from 'react-router-dom';
+import React from 'react';
+import Category from '../product/Category';
 
 const SideNavBar = () => {
   return (
@@ -8,7 +8,7 @@ const SideNavBar = () => {
       <nav className="navbar">
         <div className="container-fluid">
           <button
-            className="sidenav-toggle rounded  m-2 border-0"
+            className="sidenav-toggle  p-0 m-0 border border-0"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#navbarToggleExternalContent"
@@ -32,50 +32,35 @@ const SideNavBar = () => {
           aria-label="Close"
         ></button>
         <div className="offcanvas-header m-2">
-          <h5 className="offcanvas-title row menu">
+          <div className="offcanvas-title row menu">
             <img
               src="https://raw.githubusercontent.com/Paata1987/Store/main/src/components/87f5485fd81b4c7da0f1e71b2522eee6.png"
-              className="logo"
+              className=""
               alt="Dinara Logo"
             />
-            <Link
-              className="m-2 p-2"
-              to="/registration"
-            >
-              {" "}
-              Registration{" "}
+            <Link className="m-2 p-2 Link " to="/registration">
+              {' '}
+              Registration{' '}
             </Link>
-            <Link
-              className="m-2 p-2"
-              to="/"
-            >
-              {" "}
-              Home{" "}
+            <Link className="m-2 p-2 Link" to="/">
+              {' '}
+              Home{' '}
             </Link>
-            <Link
-              className="m-2 p-2"
-              to="/about"
-            >
-              {" "}
-              About{" "}
+            <Link className="m-2 p-2 Link" to="/about">
+              {' '}
+              About{' '}
             </Link>
-            <Link
-              className="m-2 p-2"
-              to="/contacts"
-            >
-              {" "}
-              Contact{" "}
+            <Link className="m-2 p-2 Link" to="/contacts">
+              {' '}
+              Contact{' '}
             </Link>
-            <Link
-              className="m-2 p-2"
-              to="/logaut"
-            >
-              {" "}
-              Logout{" "}
+            <Link className="m-2 p-2 Link" to="/logaut">
+              {' '}
+              Logout{' '}
             </Link>
             <Category />
             Try scrolling the rest of the page to see this option in action.
-          </h5>
+          </div>
         </div>
       </div>
     </div>

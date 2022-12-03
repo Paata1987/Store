@@ -1,11 +1,11 @@
-.sidenav-toggle {
+/* .sidenav-toggle {
   min-width: 60px;
   min-height: 60px;
   background-color: #e3f2fd;
-}
+}*/
 .navbar-toggler-icon {
-  width: 50px !important;
-  height: 50px !important;
+  width: 35px !important;
+  height: 35px !important;
   background-color: #e3f2fd;
   border: none;
 }
@@ -14,48 +14,49 @@ img {
   border: none;
   margin-top: 0px;
   margin-bottom: 0px;
-  height: auto;
 }
+
 .logo {
-  width: 50%;
-  max-height: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
-  border-radius: 15%;
-}
-.logo:hover {
-  transform: scale(1.2);
+  max-height: 80px;
+  width: auto;
+  align-content: center;
+  align-items: center;
+  margin: 0%;
+  padding: 0%;
 }
 nav a {
   font-weight: 700;
   font-style: normal;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 30px;
   margin: 15px;
   text-decoration: none;
+  display: flex;
 }
 
 .menu {
   font-weight: 500;
-
-  font-size: 30px;
+  display: flex;
+  font-size: 40px;
   padding-top: 5px;
   text-decoration: none;
+  align-items: center;
+  height: 50px;
 }
 .Link:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
   transition: 0.4s;
 }
 
-.navbar-toggler-icon:hover {
+/* .navbar-toggler-icon:hover {
   transition: 0.2s;
   box-shadow: 0 0 0 4px #eeeeee;
   transform: scale(1.4);
-}
-.offcanvas-start {
+} */
+/* .offcanvas-start {
   background-color: #e3f2fd;
 }
-
+ */
 .footer {
   margin: 0;
   height: 30px;
@@ -63,12 +64,13 @@ nav a {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgb(228, 237, 248);
+  background-color: rgb(216, 244, 250);
   color: white;
   text-align: center;
 }
 .navbar {
-  background-color: #e3f2fd;
+  background-color: rgb(216, 244, 250);
+
   padding: 5px;
 }
 
@@ -80,11 +82,7 @@ nav a {
 .btn-close:hover {
   transform: scale(1.2);
 }
-.searchButton {
-  width: 20px;
-  background-color: #008cba;
-  color: #ffffff;
-}
+
 .avatar {
   height: 50px;
   width: 50px;
@@ -93,15 +91,6 @@ nav a {
   background: #000;
   border-radius: 100%;
 }
-
-/* .productList img {
-  max-width: 400px;
-  min-width: 200px;
-  max-height: 400px;
-  min-height: 200px;
-  margin: 15px;
-  padding: 10px;
-} */
 
 .product {
   display: flex;
@@ -119,4 +108,13 @@ nav a {
 .card > img {
   width: 100%;
   border-radius: 10px;
+}
+
+.inputMyClass {
+  height: auto;
+  width: auto;
+  padding-top: 10px;
+  margin: auto;
+  display: flex;
+  position: relative;
 }

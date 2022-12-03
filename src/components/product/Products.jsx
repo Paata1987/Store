@@ -1,7 +1,7 @@
-import { useEffect } from "react";
-import { useState } from "react";
-import API_URL from "../env/apier";
-import Product from "./Product";
+import { useEffect } from 'react';
+import { useState } from 'react';
+import API_URL from '../../env/apier';
+import Product from './Product';
 function Products() {
   const [todo, setTodo] = useState([]);
 
@@ -13,17 +13,14 @@ function Products() {
   }, []);
   console.log(todo);
   return (
-    <div>
+    <div className="">
       {todo && (
-        <div>
+        <div className="row ">
           {todo.map((x, index) => (
-            <Product
-              key={index}
-              {...x}
-            />
+            <Product key={index} {...x} />
           ))}
         </div>
-      )}{" "}
+      )}{' '}
     </div>
   );
 }
