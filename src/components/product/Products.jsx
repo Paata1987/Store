@@ -13,9 +13,9 @@ function Products() {
   }, []);
   console.log(todo);
   return (
-    <div className="">
+    <div className="container">
       {todo && (
-        <div className="row ">
+        <div className="row">
           {todo.map((x, index) => (
             <Product key={index} {...x} />
           ))}

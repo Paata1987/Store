@@ -92,13 +92,13 @@ nav a {
   border-radius: 100%;
 }
 
-.product {
+/* .product {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-}
-.card {
+} */
+/* .card {
   width: 250 px;
   border: 1 lightcyan;
   border-radius: 10px;
@@ -108,6 +108,11 @@ nav a {
 .card > img {
   width: 100%;
   border-radius: 10px;
+} */
+
+.card-img-top {
+  max-width: 200px;
+  max-height: 200px;
 }
 
 .inputMyClass {
