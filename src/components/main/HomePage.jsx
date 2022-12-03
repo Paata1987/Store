@@ -4,7 +4,10 @@ import Products from '../product/Products';
 
 const HomePage = () => {
   return (
-    <div className="">
+    <div
+      className="mainComponentsClass
+      "
+    >
       <h1>Home page works</h1>
 
       <Products />

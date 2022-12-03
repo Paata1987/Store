@@ -8,13 +8,15 @@ const product = (props) => {
       <div className="border border-0 position-relative ">
         <img src={image} className="card-img-top " alt="Product Picture" />
         <div className="card-body">
-          <h5 className="card-title">{price}</h5>
-          <h5 className="card-title">{rating.rate} </h5>
+          <h6 className="card-text ">{title}</h6>
+          <h4 className="card-title ">Price: {price} $</h4>
+          <h5 className="card-title d-none d-lg-block d-lg-block d-xl-block d-xxl-block  ">
+            Rate: {rating.rate}{' '}
+          </h5>
 
-          <p className="card-text">{title}</p>
-          <a href="#" className="btn btn-primary">
+          <button href="#" className="btn btn-primary">
             Go somewhere
-          </a>
+          </button>
         </div>
       </div>
       <div>

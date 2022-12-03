@@ -7,13 +7,13 @@ const Header = () => {
   return (
     <div className="container">
       <div className="row navbar fixed-top ">
-        <div className="col  d-block">
+        <div className="col col-2 d-block">
           <SideNavBar />
         </div>
         <div className="col col-8 d-flex justify-content-center  ">
           <NavbarMenu />
         </div>
-        <div className="col  ">
+        <div className="col col-2 ">
           <div className="row"></div>
         </div>
       </div>

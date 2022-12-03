@@ -10,7 +10,7 @@ import Contacts from './components/Contacts';
 function App() {
   return (
     <BrowserRouter>
-      <div className="row">
+      <div className="container">
         <Header />
         <Routes>
           <Route path="*" element={<HomePage />} />

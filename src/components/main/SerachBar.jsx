@@ -2,7 +2,7 @@ import React from 'react';
 import { BiSearchAlt } from 'react-icons/bi';
 const SerachBar = () => {
   return (
-    <div className="inputMyClass d-block    d-xxl-block d-none ">
+    <div className="inputMyClass d-block col  d-xxl-block d-none ">
       <div className="input-group ">
         <span className="input-group-text" id="inputGroup">
           <BiSearchAlt color="blue" />

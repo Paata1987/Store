@@ -1,9 +1,9 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
+import React from 'react';
+import { Outlet } from 'react-router-dom';
 
 const AboutInfo = () => {
   return (
-    <div>
+    <div className="mainComponentsClass">
       AboutInfo
       <Outlet />
     </div>

@@ -7,13 +7,13 @@ const NavbarMenu = () => {
     <nav className="nav nav-tabs ">
       <Link className="nav-link Link" to="/">
         {' '}
-        <h5 className="menu  d-block d-lg-block d-xl-block  d-xxl-block d-none ">
+        <h4 className="menu  d-block d-lg-block d-xl-block  d-xxl-block d-none ">
           Home
-        </h5>
+        </h4>
       </Link>
       <Link className="nav-item nav-link  Link" to="/about">
         {' '}
-        <h5 className="menu  d-block    d-xxl-block d-none">About</h5>
+        <h4 className="menu  d-block  d-xl-block  d-xxl-block d-none">About</h4>
       </Link>
       <img
         src="https://raw.githubusercontent.com/Paata1987/Store/main/src/components/87f5485fd81b4c7da0f1e71b2522eee6.png"
@@ -22,13 +22,15 @@ const NavbarMenu = () => {
       />{' '}
       <Link className="nav-item nav-link Link" to="/contacts">
         {' '}
-        <h5 className="menu d-block d-xxl-block   d-none ">Contact</h5>
+        <h4 className="menu d-block d-xl-block d-xxl-block   d-none ">
+          Contact
+        </h4>
       </Link>
       <Link className="nav-item nav-link Link " to="/registration">
         {' '}
-        <h5 className="menu d-block d-lg-block d-xl-block  d-xxl-block d-none ">
+        <h4 className="menu d-block d-lg-block col d-xl-block  d-xxl-block d-none ">
           Registration
-        </h5>
+        </h4>
       </Link>
       <SerachBar />
     </nav>
