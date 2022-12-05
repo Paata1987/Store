@@ -12,6 +12,7 @@ function App() {
     <BrowserRouter>
       <div className="container">
         <Header />
+
         <Routes>
           <Route path="*" element={<HomePage />} />
           <Route path="/" element={<HomePage />} />

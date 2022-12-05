@@ -1,5 +1,3 @@
-import React from 'react';
-
 const product = (props) => {
   const { price, title, image, rating } = props;
 
@@ -13,10 +11,9 @@ const product = (props) => {
           <h5 className="card-title d-none d-lg-block d-lg-block d-xl-block d-xxl-block  ">
             Rate: {rating.rate}{' '}
           </h5>
-
-          <button href="#" className="btn btn-primary">
-            Go somewhere
-          </button>
+        </div>
+        <div className="modalButton">
+          <button className="openModalButton btn btn-primary">open</button>
         </div>
       </div>
       <div> </div>
