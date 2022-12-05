@@ -8,16 +8,22 @@ function Products() {
   useEffect(() => {
     fetch(API_URL)
       .then((res) => res.json())
+
       .then((json) => setTodo(json))
       .catch((error) => console.log(error.message));
   }, []);
+
   console.log(todo);
+  console.log(setTodo);
   return (
     <div className="container">
       {todo && (
         <div className="row">
           {todo.map((x, index) => (
-            <Product key={index} {...x} />
+            <Product
+              key={index}
+              {...x}
+            />
           ))}
         </div>
       )}{' '}
