@@ -110,6 +110,7 @@ nav a {
 
 .mainComponentsClass {
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
@@ -134,4 +135,33 @@ nav a {
 body {
   padding: 0;
   margin: 0;
+}
+.social-link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: #ddd;
+  text-decoration: none;
+  color: #555;
+}
+.spinner-border {
+  width: 5rem;
+  height: 5rem;
+  color: blue;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 9999999999;
+  overflow: hidden;
 }

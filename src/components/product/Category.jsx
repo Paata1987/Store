@@ -9,8 +9,14 @@ function Category() {
   const categoryArray = [...new Set(Array.from(new Set(preCategoryArrays)))];
 
   const listCategory = categoryArray.map((categoryItem, index) => (
-    <ul className="row" key={index}>
-      <Link className="" key={index}>
+    <ul
+      className="row"
+      key={index}
+    >
+      <Link
+        className=""
+        key={index}
+      >
         {categoryItem}
       </Link>
     </ul>
