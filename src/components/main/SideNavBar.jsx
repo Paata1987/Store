@@ -58,6 +58,10 @@ const SideNavBar = () => {
               {' '}
               Logout{' '}
             </Link>
+            <Link className="m-2 p-2 Link" to="/registration">
+              {' '}
+              Logout{' '}
+            </Link>
             <Category />
             Try scrolling the rest of the page to see this option in action.
           </div>
