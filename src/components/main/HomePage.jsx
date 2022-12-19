@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 
 import Products from '../product/Products';
+import Carousel from './Carousel';
 
 const HomePage = () => {
   return (
@@ -10,7 +10,7 @@ const HomePage = () => {
       "
     >
       <h1>Home page works</h1>
-
+      <Carousel />
       <Products />
       <Outlet />
     </div>

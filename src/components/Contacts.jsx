@@ -19,8 +19,11 @@ const Contacts = () => {
           <div className="col-md-9 mb-md-0 mb-5">
             <form
               id="contact-form"
+<<<<<<< HEAD
               name="contact-form"
               action="mail.php"
+=======
+>>>>>>> b4241fac8eff8fcb442933ef18169e8b5b86cc37
               method="POST"
             >
               <div className="row">
@@ -32,7 +35,14 @@ const Contacts = () => {
                       name="name"
                       className="form-control"
                     />
+<<<<<<< HEAD
                     <label for="name" className="">
+=======
+                    <label
+                      for="name"
+                      className=""
+                    >
+>>>>>>> b4241fac8eff8fcb442933ef18169e8b5b86cc37
                       Your name
                     </label>
                   </div>
@@ -46,7 +56,14 @@ const Contacts = () => {
                       name="email"
                       className="form-control"
                     />
+<<<<<<< HEAD
                     <label for="email" className="">
+=======
+                    <label
+                      for="email"
+                      className=""
+                    >
+>>>>>>> b4241fac8eff8fcb442933ef18169e8b5b86cc37
                       Your email
                     </label>
                   </div>
@@ -62,7 +79,14 @@ const Contacts = () => {
                       name="subject"
                       className="form-control"
                     />
+<<<<<<< HEAD
                     <label for="subject" className="">
+=======
+                    <label
+                      for="subject"
+                      className=""
+                    >
+>>>>>>> b4241fac8eff8fcb442933ef18169e8b5b86cc37
                       Subject
                     </label>
                   </div>
@@ -86,12 +110,16 @@ const Contacts = () => {
             </form>
 
             <div className="text-center text-md-left">
+<<<<<<< HEAD
               <a
                 className="btn btn-primary"
                 onclick="document.getElementById('contact-form').submit();"
               >
                 Send
               </a>
+=======
+              <div className="btn btn-primary">Send</div>
+>>>>>>> b4241fac8eff8fcb442933ef18169e8b5b86cc37
             </div>
             <div className="status"></div>
           </div>

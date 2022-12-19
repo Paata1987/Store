@@ -38,23 +38,38 @@ const SideNavBar = () => {
               className=""
               alt="Dinara Logo"
             />
-            <Link className="m-2 p-2 Link " to="/registration">
+            <Link
+              className="m-2 p-2 Link "
+              to="/registration"
+            >
               {' '}
               Registration{' '}
             </Link>
-            <Link className="m-2 p-2 Link" to="/">
+            <Link
+              className="m-2 p-2 Link"
+              to="/"
+            >
               {' '}
               Home{' '}
             </Link>
-            <Link className="m-2 p-2 Link" to="/about">
+            <Link
+              className="m-2 p-2 Link"
+              to="/about"
+            >
               {' '}
               About{' '}
             </Link>
-            <Link className="m-2 p-2 Link" to="/contacts">
+            <Link
+              className="m-2 p-2 Link"
+              to="/contacts"
+            >
               {' '}
               Contact{' '}
             </Link>
-            <Link className="m-2 p-2 Link" to="/logaut">
+            <Link
+              className="m-2 p-2 Link"
+              to="/logaut"
+            >
               {' '}
               Logout{' '}
             </Link>
